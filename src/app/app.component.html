@@ -1,0 +1,4 @@
+<div *ngIf="showSidebar" class="w-full h-full">
+  <app-layout-sidebar *ngIf="showSidebar" class=""></app-layout-sidebar>
+</div>
+<router-outlet *ngIf="!showSidebar"></router-outlet>
