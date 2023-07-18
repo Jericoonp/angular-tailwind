@@ -3,17 +3,34 @@
 @tailwind utilities;
 
 html {
-    @apply w-full h-full
+  @apply w-full h-full;
 }
 
 body {
-    @apply w-full h-full bg-stone-100
+  @apply w-full h-full bg-stone-100;
 }
 
-app-dashboard, app-layout-sidebar {
-    @apply w-full
+app-dashboard,
+app-layout-sidebar {
+  @apply w-full;
 }
 
 app-chat {
-    @apply flex-grow
+  @apply flex-grow;
+}
+
+@layer utilities {
+  .aspect-w-3 {
+    aspect-ratio: 3;
+  }
+
+  .aspect-h-2 {
+    aspect-ratio: 2;
+  }
+
+  .blur-bottom {
+    backdrop-filter: blur(
+      10px
+    ); /* Adjust the value to control the blur intensity */
+  }
 }

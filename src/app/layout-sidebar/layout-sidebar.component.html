@@ -17,7 +17,10 @@
       </button>
     </div>
     <div class="tooltip tooltip-right" data-tip="Project Management">
-      <button class="btn btn-link text-white hover:text-gray-200 text-xl">
+      <button
+        routerLink="/project-management"
+        class="btn btn-link text-white hover:text-gray-200 text-xl"
+      >
         <ng-icon name="heroListBulletSolid"></ng-icon>
       </button>
     </div>
@@ -37,7 +40,10 @@
         >
           Chat
         </button>
-        <button class="btn btn-link p-2 text-xs no-underline text-white">
+        <button
+          routerLink="/project-management"
+          class="btn btn-link p-2 text-xs no-underline text-white"
+        >
           Management
         </button>
       </div>
@@ -45,7 +51,7 @@
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
           <div class="avatar placeholder">
             <div class="bg-neutral-focus text-neutral-content rounded-full p-4">
-              <span class="">J</span>
+              <ng-icon name="heroUser" class="text-xl"></ng-icon>
             </div>
           </div>
         </label>
@@ -53,12 +59,6 @@
           tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li>
-            <a class="justify-between" onclick="profileModal.showModal()">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
           <li><a onclick="logoutModal.showModal()">Logout</a></li>
         </ul>
       </div>
@@ -66,23 +66,6 @@
     <router-outlet class=""></router-outlet>
   </div>
 </div>
-<!-- <div class="navbar bg-primary text-white w-full">test</div>
-<div class="flex h-full">
-  <div class="bg-primary h-full p-2 flex flex-col gap-8 items-center">
-  </div>
-  <router-outlet class="flex-grow h-full"></router-outlet>
-</div> -->
-<!-- <div class="flex">
-  <div class="flex flex-col">
-    <div class="navbar">test</div>
-    <div class="shadow-xl bg-primary">
-      <div class="flex p-2 gap-8 w-full flex-col items-center">
-      </div>
-    </div>
-  </div>
-  <router-outlet></router-outlet>
-</div> -->
-<!-- You can open the modal using ID.showModal() method -->
 <dialog id="profileModal" class="modal">
   <form method="dialog" class="modal-box">
     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">

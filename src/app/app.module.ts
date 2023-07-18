@@ -11,9 +11,17 @@ import {
   heroChartPieSolid,
   heroChatBubbleLeftRightSolid,
   heroListBulletSolid,
-  heroBars3Solid,
 } from '@ng-icons/heroicons/solid';
+import {
+  heroUser,
+  heroChartPie,
+  heroChatBubbleLeftRight,
+  heroListBullet,
+  heroClock,
+  heroEllipsisVertical,
+} from '@ng-icons/heroicons/outline';
 import { ChatComponent } from './chat/chat.component';
+import { ProjectManagementComponent } from './project-management/project-management.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +31,7 @@ import { ChatComponent } from './chat/chat.component';
     DashboardComponent,
     LayoutSidebarComponent,
     ChatComponent,
+    ProjectManagementComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +40,12 @@ import { ChatComponent } from './chat/chat.component';
       heroChartPieSolid,
       heroChatBubbleLeftRightSolid,
       heroListBulletSolid,
-      heroBars3Solid,
+      heroUser,
+      heroChartPie,
+      heroChatBubbleLeftRight,
+      heroListBullet,
+      heroClock,
+      heroEllipsisVertical,
     }),
   ],
   providers: [],
